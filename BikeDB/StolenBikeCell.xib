@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stolenBikeCell" rowHeight="200" id="vXq-45-fB5" customClass="StolenBikeCell" customModule="Save_The_Bike" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vXq-45-fB5" id="XhX-o2-CCB">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="198.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNf-bE-2vI">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="178.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="bbT-kz-KUJ">
+                        <rect key="frame" x="0.0" y="128" width="343" height="50"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81z-Rs-II3">
+                                <rect key="frame" x="0.0" y="0.0" width="137" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wg4-Y8-Edg">
+                                    <rect key="frame" x="0.0" y="0.0" width="137" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhk-hq-pX5">
+                                            <rect key="frame" x="0.0" y="-128" width="0.0" height="0.0"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="oay-Ob-7Zy">
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="JNg-8s-1Y0">
+                                            <rect key="frame" x="4" y="8" width="129" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIE-J8-fRe">
+                                            <rect key="frame" x="49" y="26" width="39" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="JNg-8s-1Y0" firstAttribute="centerX" secondItem="wg4-Y8-Edg" secondAttribute="centerX" id="7Em-Js-KUa"/>
+                                        <constraint firstAttribute="bottom" secondItem="TIE-J8-fRe" secondAttribute="bottom" constant="8" id="8VQ-2A-3Xs"/>
+                                        <constraint firstItem="JNg-8s-1Y0" firstAttribute="leading" secondItem="wg4-Y8-Edg" secondAttribute="leading" constant="4" id="Qal-rz-hfr"/>
+                                        <constraint firstAttribute="trailing" secondItem="JNg-8s-1Y0" secondAttribute="trailing" constant="4" id="WGg-Bf-33S"/>
+                                        <constraint firstItem="TIE-J8-fRe" firstAttribute="centerX" secondItem="wg4-Y8-Edg" secondAttribute="centerX" id="is0-Cw-rx4"/>
+                                        <constraint firstItem="JNg-8s-1Y0" firstAttribute="top" secondItem="wg4-Y8-Edg" secondAttribute="top" constant="8" id="t6N-UX-kd0"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="7Em-Js-KUa"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQ0-wk-hNO">
+                                <rect key="frame" x="138" y="0.0" width="67" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="R3N-kE-Bqj">
+                                    <rect key="frame" x="0.0" y="0.0" width="67" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9g-Gr-rXR">
+                                            <rect key="frame" x="-138" y="-128" width="0.0" height="0.0"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="BMN-us-IXG">
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8E-di-Cqv">
+                                            <rect key="frame" x="9" y="26" width="49" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P0-Pp-ETX">
+                                            <rect key="frame" x="15" y="8" width="37" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5P0-Pp-ETX" firstAttribute="centerX" secondItem="R3N-kE-Bqj" secondAttribute="centerX" id="3go-kn-BMg"/>
+                                        <constraint firstItem="5P0-Pp-ETX" firstAttribute="top" secondItem="R3N-kE-Bqj" secondAttribute="top" constant="8" id="Tkq-oh-btx"/>
+                                        <constraint firstAttribute="bottom" secondItem="V8E-di-Cqv" secondAttribute="bottom" constant="8" id="hp1-Kb-ghL"/>
+                                        <constraint firstItem="V8E-di-Cqv" firstAttribute="centerX" secondItem="R3N-kE-Bqj" secondAttribute="centerX" id="j4N-LY-qlA"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBL-Lr-Emq">
+                                <rect key="frame" x="206" y="0.0" width="137" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eum-Xm-Xdt">
+                                    <rect key="frame" x="0.0" y="0.0" width="137" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-7f-IR0">
+                                            <rect key="frame" x="-206" y="-128" width="0.0" height="0.0"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="cQT-2U-vkC">
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMn-PP-xrm">
+                                            <rect key="frame" x="48" y="26" width="41" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5to-a2-138">
+                                            <rect key="frame" x="47" y="8" width="42" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5to-a2-138" firstAttribute="centerX" secondItem="eum-Xm-Xdt" secondAttribute="centerX" id="Wge-Nv-zCO"/>
+                                        <constraint firstItem="5to-a2-138" firstAttribute="top" secondItem="eum-Xm-Xdt" secondAttribute="top" constant="8" id="otI-Vg-aNS"/>
+                                        <constraint firstAttribute="bottom" secondItem="EMn-PP-xrm" secondAttribute="bottom" constant="8" id="wkd-aI-w4G"/>
+                                        <constraint firstItem="EMn-PP-xrm" firstAttribute="centerX" secondItem="eum-Xm-Xdt" secondAttribute="centerX" id="zEC-h4-GFd"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="XqB-8i-8bR"/>
+                            <constraint firstItem="JBL-Lr-Emq" firstAttribute="width" secondItem="bbT-kz-KUJ" secondAttribute="width" multiplier="0.4" id="aQS-II-p0I"/>
+                            <constraint firstItem="81z-Rs-II3" firstAttribute="width" secondItem="bbT-kz-KUJ" secondAttribute="width" multiplier="0.4" id="exY-tj-E0c"/>
+                            <constraint firstAttribute="height" constant="50" id="gWG-m6-8nr"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bbT-kz-KUJ" firstAttribute="bottom" secondItem="RNf-bE-2vI" secondAttribute="bottom" id="5ge-FJ-Akj"/>
+                    <constraint firstAttribute="bottom" secondItem="RNf-bE-2vI" secondAttribute="bottom" constant="20" id="7re-RD-VVC"/>
+                    <constraint firstAttribute="trailing" secondItem="RNf-bE-2vI" secondAttribute="trailing" id="EMq-aE-1tF"/>
+                    <constraint firstItem="RNf-bE-2vI" firstAttribute="leading" secondItem="XhX-o2-CCB" secondAttribute="leading" id="El7-5W-BRD"/>
+                    <constraint firstItem="RNf-bE-2vI" firstAttribute="top" secondItem="XhX-o2-CCB" secondAttribute="top" id="Go4-Nk-iAr"/>
+                    <constraint firstAttribute="trailing" secondItem="bbT-kz-KUJ" secondAttribute="trailing" id="Qqt-yA-Xvl"/>
+                    <constraint firstAttribute="bottom" secondItem="bbT-kz-KUJ" secondAttribute="bottom" constant="20" id="WIe-uq-Auv"/>
+                    <constraint firstAttribute="bottom" secondItem="RNf-bE-2vI" secondAttribute="bottom" constant="20" id="YEb-1N-R2V"/>
+                    <constraint firstAttribute="trailing" secondItem="bbT-kz-KUJ" secondAttribute="trailing" id="cyA-vk-brX"/>
+                    <constraint firstItem="RNf-bE-2vI" firstAttribute="top" secondItem="XhX-o2-CCB" secondAttribute="top" id="guS-FT-GFg"/>
+                    <constraint firstItem="bbT-kz-KUJ" firstAttribute="leading" secondItem="XhX-o2-CCB" secondAttribute="leading" id="jYT-dn-Zhn"/>
+                    <constraint firstAttribute="trailing" secondItem="RNf-bE-2vI" secondAttribute="trailing" id="oPW-Zp-j1X"/>
+                    <constraint firstItem="RNf-bE-2vI" firstAttribute="leading" secondItem="XhX-o2-CCB" secondAttribute="leading" id="pSA-5I-K22"/>
+                    <constraint firstItem="bbT-kz-KUJ" firstAttribute="leading" secondItem="XhX-o2-CCB" secondAttribute="leading" id="uOQ-AG-0of"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7re-RD-VVC"/>
+                        <exclude reference="EMq-aE-1tF"/>
+                        <exclude reference="El7-5W-BRD"/>
+                        <exclude reference="guS-FT-GFg"/>
+                        <exclude reference="Qqt-yA-Xvl"/>
+                        <exclude reference="WIe-uq-Auv"/>
+                        <exclude reference="jYT-dn-Zhn"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblCity" destination="JNg-8s-1Y0" id="9va-sb-Aci"/>
+                <outlet property="lblDate" destination="5P0-Pp-ETX" id="mOD-fl-3rx"/>
+                <outlet property="lblMonth" destination="V8E-di-Cqv" id="7bs-6d-QNU"/>
+                <outlet property="lblPrice" destination="5to-a2-138" id="hKA-5E-VR9"/>
+                <outlet property="lblState" destination="TIE-J8-fRe" id="Tpz-7v-wCe"/>
+                <outlet property="pic" destination="RNf-bE-2vI" id="L01-R5-zah"/>
+            </connections>
+            <point key="canvasLocation" x="589.5" y="335.5"/>
+        </tableViewCell>
+    </objects>
+</document>

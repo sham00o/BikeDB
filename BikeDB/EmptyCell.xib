@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell" rowHeight="200" id="zPA-Tr-Qss" customClass="EmptyCell" customModule="Save_The_Bike" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zPA-Tr-Qss" id="MWw-v5-67h">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no bikes found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPO-g0-ea8">
+                        <rect key="frame" x="150" y="44.5" width="101" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.80531881313131304" green="0.80531881313131304" blue="0.80531881313131304" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="LPO-g0-ea8" firstAttribute="centerY" secondItem="MWw-v5-67h" secondAttribute="centerY" id="4f5-Sm-M5r"/>
+                    <constraint firstItem="LPO-g0-ea8" firstAttribute="centerX" secondItem="MWw-v5-67h" secondAttribute="centerX" id="erm-5W-xE2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblText" destination="LPO-g0-ea8" id="QCg-H5-a3H"/>
+            </connections>
+            <point key="canvasLocation" x="213.5" y="321.5"/>
+        </tableViewCell>
+    </objects>
+</document>
